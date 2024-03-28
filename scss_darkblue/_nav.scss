@@ -1,0 +1,129 @@
+nav {
+    width: 80px;
+    height: 100%;
+    background: $nav_BG;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 230px;
+
+        li {
+            width: 70px;
+            height: 60px;
+            border-radius: 16px 0 0 16px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            padding-left: 18px;
+            z-index: 2;
+
+            &.slide {
+                background: $nav_hoverBG;
+                position: absolute;
+                top: 0;
+                pointer-events: none;
+                transition: 0.3s all;
+                z-index: 1;
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-color: $nav_hoverBG transparent;
+                }
+                &::before {
+                    bottom: -8px;
+                    border-width: 8px 0 0 8px;
+                }
+                &::after {
+                    top: -8px;
+                    border-width: 0 0 8px 8px;
+                }
+
+                span {
+                    display: block;
+                    position: fixed;
+                    top: 230px;
+                    border-radius: 50%;
+                    background: $mainBG_2;
+                    transition: 0.3s all;
+                }
+            }
+
+            &:hover,&:active {
+
+                i {
+                    background-position-y: 100%;
+                    animation: turnAround 0.6s linear 0s infinite;
+                }
+
+                @keyframes turnAround {
+                    0% {
+                        transform: rotate(0);
+                    }
+
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+
+            &.active {
+
+                i {
+                    background-position-y: 100%;
+                }
+            }
+
+            &:nth-of-type(1).active ~ .slide {
+                top: 230px;
+            }
+            &:nth-of-type(2).active ~ .slide {
+                top: 290px;
+            }
+            &:nth-of-type(3).active ~ .slide {
+                top: 350px;
+            }
+            &:nth-of-type(4).active ~ .slide {
+                top: 410px;
+            }
+            &:nth-of-type(5).active ~ .slide {
+                top: 470px;
+            }
+
+            i {
+                width: 25px;
+                height: 25px;
+
+                &.basketball {
+                    background-position-x: 0;
+                }
+                &.soccer {
+                    background-position-x: 25%;
+                }
+                &.baseball {
+                    background-position-x: 50%;
+                }
+                &.iceball {
+                    background-position-x: 75%;
+                }
+                &.tennis {
+                    background-position-x: 100%;
+                }
+            }
+        }
+    }
+}

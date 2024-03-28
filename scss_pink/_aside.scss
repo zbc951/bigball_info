@@ -1,0 +1,28 @@
+aside {
+    width: 180px;
+    height: 100%;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    padding-top: 235px;
+    z-index: 99;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 230px;
+        width: 100%;
+        height: calc(100% - 350px);
+        background: $mainBG_3;
+        box-shadow: 0 0 8px 2px $mainShadow_1 inset;
+        border-radius: 30px;
+    }
+
+    a {
+        width: 175px;
+        height: 175px;
+        position: relative;
+        margin: 0 auto;
+    }
+}

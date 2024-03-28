@@ -1,0 +1,151 @@
+//header
+@mixin headerInput {
+    background: #a01142;
+    border-radius: 30px;
+    box-shadow: 0 0 8px 1px #00000049 inset;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+$header_userIC_BG: #fcd9e3;
+$header_userIC_Border: #6d0b2d;
+$header_rightArea_Color: #ffffff;
+$header_teamArea_BG: #7a072c;
+$header_teamArea_scoreColor: #dd2064;
+
+//mainArea
+$mainArea_tableList_Border: #890c37;
+$mainArea_tableList_statusColor: #dd2064;
+$mainArea_tableList_titleColor: #e52a6d;
+$mainArea_tableList_redCard: #ff0000;
+$mainArea_tableList_yellowCard: #ffc600;
+@mixin smallBtn_1 {
+    background: #ececec;
+    border-radius: 20px;
+    color: #bcbcbc;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px;
+    pointer-events: none;
+
+    &.active {
+        background: #dd2064;
+        color: #ffffff;
+        pointer-events: visible;
+    }
+
+    &:hover,&:active {
+
+    }
+}
+$mainArea_tableList_disableColor: #bcbcbc;
+$mainArea_smallBtn_BG_2: linear-gradient(to right,#386ba3 0%,#394584 100%);
+$mainArea_smallBtn_Color_1: #ffffff;
+@mixin collapseBtn {
+    background: #f7f7f7;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 #00000049;
+    color: #27425f;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+    &:hover,&:active,&.active {
+        
+    }
+}
+
+//footer
+$footer_Color: #ea6c9a;
+
+//chatroom
+$chatroom_titleColor: #dd2064;
+$chatroom_titleRemind_Color: #ffffff;
+$chatroom_Border: #7a072c;
+$chatroom_innerBorder: #cccccc;
+$chatroom_secondBG: #efefef;
+$chatroom_Color: #ffffff;
+
+//主色系
+$mainBG_1: #be1451;
+$mainBG_2: #ffffff;
+$mainBG_3: #a01142;
+
+$mainColor_1: #27425f;
+$mainColor_2: #a09cb5;
+$mainColor_3: #65788d;
+
+$mainBorder_1: #eff2f3;
+$mainBorder_2: #dbdbdb;
+
+$mainShadow_1: #00000050;
+
+//下拉式選單
+$list_BG: #ffffff;
+$list_hoverBG: #f8dbe6;
+$list_color: #27425f;
+
+//button
+@mixin btnStyle_1 {
+    background: transparent;
+    border: solid 1px transparent;
+    border-radius: 30px;
+    color: #ff92b4;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    padding: 0 20px;
+
+    &:hover,&:active,&.active {
+        background: #c61856;
+        border-color: #da306d;
+        color: #ffffff;
+    }
+}
+
+//套件
+@mixin scorllBar {
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #c5ccd4;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #d41e60;
+        border-radius: 10px;
+    }
+}
+@mixin scorllBar_2 {
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #c5ccd4;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 10px;
+    }
+}

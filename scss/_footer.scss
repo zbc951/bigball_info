@@ -1,0 +1,148 @@
+footer {
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    background: $mainBG_1;
+    padding: 0 205px 0 80px;
+
+    .top {
+        width: 100%;
+        height: 45px;
+        background: $footer_topBG;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            width: auto;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+
+            li {
+                width: auto;
+                height: 43px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                padding: 0 20px;
+
+                &.slide {
+                    width: 0;
+                    background: $mainBG_1;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    pointer-events: none;
+                    transition: 0.3s all;
+                    opacity: 0;
+                    padding: 0;
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        width: 40px;
+                        height: 100%;
+                    }
+                    &::before {
+                        left: -40px;
+                    }
+                    &::after {
+                        right: -40px;
+                        transform: scaleX(-1);
+                    }
+                }
+
+                &:nth-of-type(1):hover ~ .slide {
+                    left: 20px;
+                    width: 78px;
+                    opacity: 1;
+                }
+                &:nth-of-type(2):hover ~ .slide {
+                    left: 138px;
+                    width: 50px;
+                    opacity: 1;
+                }
+                &:nth-of-type(3):hover ~ .slide {
+                    left: 228px;
+                    width: 78px;
+                    opacity: 1;
+                }
+                &:nth-of-type(4):hover ~ .slide {
+                    left: 346px;
+                    width: 92px;
+                    opacity: 1;
+                }
+                &:nth-of-type(5):hover ~ .slide {
+                    left: 478px;
+                    width: 78px;
+                    opacity: 1;
+                }
+
+                &:hover,&:active,&.active {
+
+                    p {
+                        color: $mainColor_2;
+                    }
+
+                    i {
+                        background-position-y: 100%;
+                    }
+                }
+
+                p {
+                    color: $mainColor_3;
+                    font-size: 14px;
+                    font-weight: bold;
+                    position: relative;
+                    transition: 0.3s all;
+                    z-index: 1;
+                }
+
+                i {
+                    width: 17px;
+                    height: 17px;
+                    position: relative;
+                    transition: 0.3s all;
+                    margin-right: 5px;
+                    z-index: 1;
+
+                    &.help {
+                        background-position-x: 0;
+                    }
+                    &.feeback {
+                        background-position-x: 25%;
+                    }
+                    &.event {
+                        background-position-x: 50%;
+                    }
+                    &.rule {
+                        background-position-x: 75%;
+                    }
+                    &.about {
+                        background-position-x: 100%;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            color: $mainColor_2;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}

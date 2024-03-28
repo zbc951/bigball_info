@@ -1,0 +1,456 @@
+header {
+    width: 100%;
+    height: auto;
+    min-width: 1000px;
+    position: relative;
+    z-index: 100;
+    
+    //上部
+    .topArea {
+        width: 100%;
+        height: 100px;
+        background: $mainBG_1;
+        display: flex;
+        justify-content: space-between;
+
+        //左
+        .left {
+            width: auto;
+            height: 100%;
+            background: $mainBG_2;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -145px;
+                width: 145px;
+                height: 100%;
+            }
+
+            ul {
+                width: auto;
+                height: auto;
+                display: flex;
+
+                li {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    margin-left: 25px;
+
+                    i {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 5px;
+
+                        &.home {
+                            background-position-x: 0;
+                        }
+                        &.event {
+                            background-position-x: 50%;
+                        }
+                        &.pro {
+                            background-position-x: 100%;
+                        }
+                    }
+
+                    p {
+                        color: $mainColor_1;
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .btnBox {
+                width: auto;
+                height: auto;
+                display: flex;
+                position: absolute;
+                left: 25px;
+                top: 5px;
+
+                button {
+                    width: 20px;
+                    height: 20px;
+                    border: solid 2px transparent;
+                    border-radius: 50%;
+                    margin-right: 10px;
+    
+                    &:nth-of-type(1) {
+                        background: #ffffff;
+                        border-color: #2b6de7;
+
+                        &:hover,&:active,&.active {
+                            background: #ff8656;
+                            border-color: #ffffff;
+                        }
+                    }
+    
+                    &:nth-of-type(2) {
+                        background: #2a356e;
+                        border-color: #7d86ae;
+                    }
+
+                    &:nth-of-type(3) {
+                        background: #ffffff;
+                        border-color: #7a072c;
+                    }
+                }
+            }
+        }
+
+        //右
+        .right {
+            width: auto;
+            height: 100%;
+            background: $mainBG_2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            padding-right: 30px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -145px;
+                width: 145px;
+                height: 100%;
+                transform: scaleX(-1);
+            }
+
+            .top {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                .infoArea {
+                    width: auto;
+                    height: auto;
+                    margin-right: 25px;
+
+                    ul {
+                        width: auto;
+                        height: auto;
+
+                        li {
+                            width: auto;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+
+                            i {
+                                width: 17px;
+                                height: 17px;
+                                margin-right: 15px;
+
+                                &.money {
+                                    background-position-x: 0;
+                                }
+                                &.vip {
+                                    background-position-x: 100%;
+                                }
+                            }
+
+                            p {
+                                width: 105px;
+                                height: 20px;
+                                border: solid 1px $mainBorder_1;
+                                border-radius: 2px;
+                                color: $mainColor_1;
+                                font-size: 14px;
+                                font-weight: bold;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .memberList {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+
+                    .user {
+                        width: 20px;
+                        height: 24px;
+                        margin-right: 15px;
+                    }
+
+                    p {
+                        color: $mainColor_1;
+                        font-size: 18px;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        user-select: none;
+
+                        span {
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 5px 4px 0 4px;
+                            border-color: $mainBG_3 transparent;
+                            margin: 4px 0 0 10px;
+                        }
+                    }
+
+                    ul {
+                        display: none;
+                        width: auto;
+                        height: auto;
+                        background: $mainBG_3;
+                        position: absolute;
+                        right: 0;
+                        top: 35px;
+                        padding: 5px;
+                        z-index: 10;
+
+                        &.display {
+                            display: block;
+                        }
+
+                        li {
+                            color: $mainColor_2;
+                            font-size: 14px;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            padding: 5px 10px;
+
+                            &:hover,&:active,&.active {
+                                background: $mainBG_1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+
+                .outerList {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+
+                    li {
+                        width: auto;
+                        height: auto;
+                        margin-right: 20px;
+                        cursor: pointer;
+
+                        &:first-child {
+                            margin-right: 40px;
+                        }
+
+                        p {
+                            color: $mainColor_1;
+                            font-size: 14px;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+
+                            span {
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 5px 4px 0 4px;
+                                border-color: $mainBG_3 transparent;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .lang {
+                    width: 16px;
+                    height: 17px;
+                    position: relative;
+                    cursor: pointer;
+
+                    ul {
+                        display: none;
+                        width: auto;
+                        height: auto;
+                        background: $mainBG_3;
+                        position: absolute;
+                        right: 0;
+                        top: 20px;
+                        padding: 5px;
+                        z-index: 10;
+
+                        &.display {
+                            display: block;
+                        }
+
+                        li {
+                            color: $mainColor_2;
+                            font-size: 14px;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            padding: 5px 10px;
+
+                            &:hover,&:active,&.active {
+                                background: $mainBG_1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //teamArea
+    .teamArea {
+        width: 100%;
+        height: 120px;
+        background: $header_teamArea_BG;
+        padding: 5px 20px;
+
+        .outerBox {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            // overflow-x: overlay;
+            padding: 5px;
+            // @include scorllBar;
+
+            .swiper-wrapper  {
+                align-items: center;
+
+                .teamBox {
+                    width: 350px;
+                    height: 85px;
+                    background: $mainBG_2;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px 0 $mainShadow_1;
+                    position: relative;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                    padding-left: 5px;
+                    margin-right: 20px;
+
+                    &.a {
+                        
+                        &::before {
+                            background: #000;
+                        }
+                    }
+                    &.b {
+                        
+                        &::before {
+                            background: #ccc;
+                        }
+                    }
+                    &.c {
+                        
+                        &::before {
+                            background: #ff0;
+                        }
+                    }
+                    &.d {
+                        
+                        &::before {
+                            background: #f00;
+                        }
+                    }
+                    &.e {
+                        
+                        &::before {
+                            background: #fcd;
+                        }
+                    }
+    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 5px;
+                        height: 100%;
+                        background: $header_teamArea_borderColor_1;
+                    }
+    
+                    .league {
+                        color: $mainColor_3;
+                        font-size: 12px;
+                        font-weight: bold;
+                        text-align: center;
+                        padding-top: 8px;
+                    }
+    
+                    .center {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 12px 20px;
+    
+                        p {
+                            width: 40%;
+                            color: $mainColor_1;
+                            font-size: 16px;
+                            font-weight: bold;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+    
+                            &.score {
+                                width: auto;
+                                color: $header_teamArea_scoreColor;
+                            }
+                        }
+                    }
+                    
+                    .bottom {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 20px;
+    
+                        p {
+                            width: 30%;
+                            color: $mainColor_3;
+                            font-size: 12px;
+                            font-weight: bold;
+                            text-align: center;
+    
+                            &:nth-of-type(2) {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

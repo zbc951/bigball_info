@@ -1,0 +1,20 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: overlay;
+
+    body {
+        width: 100%;
+        min-width: 1000px;
+        height: 100%;
+        position: relative;
+
+        @import "./header";
+        @import "./nav";
+        @import "./aside";
+        @import "./mainArea";
+        @import "./footer";
+        @import "./jumpWindow";
+        @import "./chatroom";
+    }
+}

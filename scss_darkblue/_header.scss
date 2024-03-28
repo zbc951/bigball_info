@@ -1,0 +1,405 @@
+header {
+    width: 100%;
+    height: auto;
+    min-width: 1000px;
+    position: relative;
+    z-index: 100;
+    
+    //上部
+    .topArea {
+        width: 100%;
+        height: 100px;
+        border-bottom: solid 1px $header_topArea_Border;
+        display: flex;
+        justify-content: space-between;
+
+        //左
+        .left {
+            width: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            ul {
+                width: auto;
+                height: auto;
+                display: flex;
+
+                li {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    margin-left: 25px;
+
+                    i {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 5px;
+
+                        &.home {
+                            background-position-x: 0;
+                        }
+                        &.event {
+                            background-position-x: 50%;
+                        }
+                        &.pro {
+                            background-position-x: 100%;
+                        }
+                    }
+
+                    p {
+                        color: $mainColor_1;
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .btnBox {
+                width: auto;
+                height: auto;
+                display: flex;
+                position: absolute;
+                left: 25px;
+                top: 5px;
+
+                button {
+                    width: 20px;
+                    height: 20px;
+                    border: solid 2px transparent;
+                    border-radius: 50%;
+                    margin-right: 10px;
+    
+                    &:nth-of-type(1) {
+                        background: #ffffff;
+                        border-color: #2b6de7;
+                    }
+    
+                    &:nth-of-type(2) {
+                        background: #2a356e;
+                        border-color: #7d86ae;
+
+                        &:hover,&:active,&.active {
+                            background: #7d86ae;
+                            border-color: #0f2358;
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        background: #ffffff;
+                        border-color: #7a072c;
+                    }
+                }
+            }
+        }
+
+        //右
+        .right {
+            width: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 30px;
+
+            .top {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                .infoArea {
+                    width: auto;
+                    height: auto;
+                    margin-right: 25px;
+
+                    ul {
+                        width: auto;
+                        height: auto;
+
+                        li {
+                            width: auto;
+                            height: auto;
+                            background: $header_topArea_moneyBG;
+                            border-radius: 3px;
+                            box-shadow: 1px 2px 5px 0 $mainShadow_1;
+                            display: flex;
+                            align-items: center;
+                            padding: 3px 0 2px 12px;
+                            margin-bottom: 10px;
+
+                            &:last-child {
+                                background: $header_topArea_vipBG;
+                                margin: 0;
+                            }
+
+                            i {
+                                width: 17px;
+                                height: 17px;
+                                margin-right: 12px;
+
+                                &.money {
+                                    background-position-x: 0;
+                                }
+                                &.vip {
+                                    background-position-x: 100%;
+                                }
+                            }
+
+                            p {
+                                width: 105px;
+                                height: 20px;
+                                color: $mainColor_2;
+                                font-size: 14px;
+                                font-weight: bold;
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+
+                .memberList {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+
+                    .user {
+                        width: 20px;
+                        height: 24px;
+                        margin-right: 15px;
+                    }
+
+                    p {
+                        color: $mainColor_2;
+                        font-size: 18px;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        user-select: none;
+
+                        span {
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 5px 4px 0 4px;
+                            border-color: $mainColor_2 transparent;
+                            margin: 4px 0 0 10px;
+                        }
+                    }
+
+                    ul {
+                        display: none;
+                        width: auto;
+                        height: auto;
+                        background: $list_BG;
+                        position: absolute;
+                        right: 0;
+                        top: 35px;
+                        padding: 5px;
+                        z-index: 10;
+
+                        &.display {
+                            display: block;
+                        }
+
+                        li {
+                            color: $list_color;
+                            font-size: 14px;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            padding: 5px 10px;
+
+                            &:hover,&:active,&.active {
+                                background: $list_hoverBG;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+
+                .outerList {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+
+                    li {
+                        width: auto;
+                        height: auto;
+                        margin-right: 20px;
+                        cursor: pointer;
+
+                        &:first-child {
+                            margin-right: 40px;
+                        }
+
+                        p {
+                            color: $mainColor_1;
+                            font-size: 14px;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+
+                            span {
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 5px 4px 0 4px;
+                                border-color: $mainColor_2 transparent;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .lang {
+                    width: 16px;
+                    height: 17px;
+                    position: relative;
+                    cursor: pointer;
+
+                    ul {
+                        display: none;
+                        width: auto;
+                        height: auto;
+                        background: $list_BG;
+                        position: absolute;
+                        right: 0;
+                        top: 20px;
+                        padding: 5px;
+                        z-index: 10;
+
+                        &.display {
+                            display: block;
+                        }
+
+                        li {
+                            color: $list_color;
+                            font-size: 14px;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            padding: 5px 10px;
+
+                            &:hover,&:active,&.active {
+                                background: $list_hoverBG;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //teamArea
+    .teamArea {
+        width: 100%;
+        height: 120px;
+        background: $mainBG_1;
+        padding: 5px 20px;
+
+        .outerBox {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            // overflow-x: overlay;
+            padding: 5px;
+            // @include scorllBar;
+
+            .swiper-wrapper {
+                align-items: center;
+
+                .teamBox {
+                    width: 350px;
+                    height: 85px;
+                    background: $header_teamArea_smallBG_1;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px 0 $mainShadow_1;
+                    position: relative;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                    margin-right: 20px;
+    
+                    &.two {
+                        background: $header_teamArea_smallBG_2;
+                    }
+                    &.three {
+                        background: $header_teamArea_smallBG_3;
+                    }
+                    &.four {
+                        background: $header_teamArea_smallBG_4;
+                    }
+    
+                    .league {
+                        color: $mainColor_2;
+                        font-size: 12px;
+                        font-weight: bold;
+                        text-align: center;
+                        opacity: 0.65;
+                        padding-top: 8px;
+                    }
+    
+                    .center {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 12px 20px;
+    
+                        p {
+                            width: 40%;
+                            color: $mainColor_2;
+                            font-size: 16px;
+                            font-weight: bold;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+    
+                            &.score {
+                                width: auto;
+                            }
+                        }
+                    }
+                    
+                    .bottom {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 20px;
+    
+                        p {
+                            width: 30%;
+                            color: $mainColor_2;
+                            font-size: 12px;
+                            font-weight: bold;
+                            text-align: center;
+    
+                            &:nth-of-type(2) {
+                                width: auto;
+                                opacity: 0.65;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

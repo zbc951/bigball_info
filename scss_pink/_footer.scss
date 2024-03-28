@@ -1,0 +1,86 @@
+footer {
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    background: $mainBG_1;
+    padding: 0 205px 0 80px;
+
+    .top {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            width: auto;
+            height: 40px;
+            background: $mainBG_3;
+            border-radius: 30px;
+            box-shadow: 0 0 8px 1px $mainShadow_1 inset;
+            display: flex;
+            align-items: center;
+            padding: 0 5px;
+
+            li {
+                width: auto;
+                height: 30px;
+                @include btnStyle_1;
+                margin-right: 10px;
+
+                &:nth-last-of-type(2) {
+                    margin: 0;
+                }
+
+                &:last-child {
+                    display: none;
+                }
+
+                &:hover,&:active,&.active {
+
+                    i {
+                        background-position-y: 100%;
+                    }
+                }
+
+                i {
+                    width: 17px;
+                    height: 17px;
+                    margin-right: 5px;
+
+                    &.help {
+                        background-position-x: 0;
+                    }
+                    &.feeback {
+                        background-position-x: 25%;
+                    }
+                    &.event {
+                        background-position-x: 50%;
+                    }
+                    &.rule {
+                        background-position-x: 75%;
+                    }
+                    &.about {
+                        background-position-x: 100%;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+
+        p {
+            color: $footer_Color;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}

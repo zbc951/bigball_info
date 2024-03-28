@@ -1,0 +1,125 @@
+//header
+$header_topArea_moneyBG: linear-gradient(to right,#52506c 0%,#23306b 72%);
+$header_topArea_vipBG: linear-gradient(to right,#455f5f 0%,#23306b 72%);
+$header_topArea_Border: #28387c;
+$header_teamArea_smallBG_1: linear-gradient(to right,#009fff 0%,#037bfd 100%);
+$header_teamArea_smallBG_2: linear-gradient(to right,#ab56f6 0%,#6b53f7 100%);
+$header_teamArea_smallBG_3: linear-gradient(to right,#3cc84f 0%,#0bba6a 100%);
+$header_teamArea_smallBG_4: linear-gradient(to right,#fd7f5c 0%,#fb5d97 100%);
+
+//nav
+$nav_BG: #0f1945;
+$nav_hoverBG: #0a0d2b;
+
+//aside
+$aside_BG: #11153b;
+
+//mainArea
+$mainArea_topBtn_hoverBG: linear-gradient(to right,#009fff 0%,#037bfd 100%);
+$mainArea_topBtn_hoverShadow: #009fff50;
+$mainArea_topBtn_lightBG: #ffffff;
+$mainArea_tableList_statusBG: #2a356e;
+$mainArea_tableList_statusBorder: #5161b1;
+$mainArea_tableList_redCard: #ff0000;
+$mainArea_tableList_yellowCard: #ffc600;
+@mixin smallBtn_1 {
+    background: #17204d;
+    border-radius: 20px;
+    color: #5d6694;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px;
+    pointer-events: none;
+
+    &.active {
+        background: linear-gradient(to right,#386b76 0%,#394584 100%);
+        box-shadow: 0 2px 3px 0 #00000050;
+        color: #36d84c;
+        pointer-events: visible;
+    }
+
+    &:hover,&:active {
+        background: #394685;
+        box-shadow: 0 0 5px 1px #36d84c;
+    }
+}
+$mainArea_tableList_disableColor: #5d6694;
+$mainArea_smallBtn_BG_2: linear-gradient(to right,#386ba3 0%,#394584 100%);
+$mainArea_smallBtn_Color_1: #36d84c;
+$mainArea_smallBtn_Color_2: #36dcff;
+$mainArea_smallBtn_hoverBG: #394685;
+$mainArea_smallBtn_hoverShadow_2: #36dcff;
+@mixin collapseBtn {
+    background: #1a224e;
+    border-radius: 10px;
+    color: #aab1d4;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s all;
+    padding: 0 10px;
+
+    &:hover,&:active {
+        box-shadow: 0 0 10px 5px #009fff50,-3px 0 5px 3px #009fff50,3px 0 5px 3px #009fff50;
+        background: #028bfe;
+        color: #ffffff;
+    }
+
+    &.active {
+        background: #028bfe;
+        color: #ffffff;
+    }
+}
+
+//footer
+$footer_hoverBG: linear-gradient(to top,#0e355c 0%,#04061c 100%);
+$footer_hoverColor: #27afff;
+$footer_hoverBorder: #27afff;
+
+//chatroom
+$chatroom_titleBG: linear-gradient(to right,#009fff 0%,#037bfd 100%);
+$chatroom_titleRemind_BG: #ffffff;
+$chatroom_titleRemind_Color: #121212;
+$chatroom_BG: #ffffff;
+$chatroom_secondBG: #efefef;
+$chatroom_Border: #cccccc;
+
+//主色系
+$mainBG_1: #04061c;
+$mainBG_2: #1a224e;
+$mainBG_3: #1f295b;
+
+$mainColor_1: #aab1d4;
+$mainColor_2: #ffffff;
+
+$mainBorder_1: #354388;
+
+$mainShadow_1: #00000050;
+
+//下拉式選單
+$list_BG: #ffffff;
+$list_hoverBG: #efefef;
+$list_color: #121212;
+
+//套件
+@mixin scorllBar {
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #0a0d2b;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #727ebb;
+        border-radius: 10px;
+    }
+}

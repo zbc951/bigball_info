@@ -1,0 +1,16 @@
+aside {
+    width: 205px;
+    height: 100%;
+    background: $aside_BG;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 235px;
+    z-index: 99;
+
+    a {
+        width: 175px;
+        height: 175px;
+        margin: 0 auto;
+    }
+}

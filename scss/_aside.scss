@@ -1,0 +1,17 @@
+aside {
+    width: 205px;
+    height: 100%;
+    background: $mainBG_2;
+    box-shadow: -2px 0 5px 0 $mainShadow_1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 235px;
+    z-index: 99;
+
+    a {
+        width: 175px;
+        height: 175px;
+        margin: 0 auto;
+    }
+}

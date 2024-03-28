@@ -1,0 +1,99 @@
+nav {
+    width: 80px;
+    height: 100%;
+    background: $nav_BG;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 230px;
+
+        li {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &.slide {
+                background: $mainBG_2;
+                position: absolute;
+                top: 0;
+                pointer-events: none;
+                transition: 0.3s all;
+
+                span {
+                    display: block;
+                    position: fixed;
+                    top: 230px;
+                    border-radius: 50%;
+                    background: $mainBG_2;
+                    transition: 0.3s all;
+                }
+            }
+
+            &:hover,&:active {
+
+                i {
+                    transform: rotate(360deg);
+                }
+            }
+
+            &.active {
+
+                i {
+                    background-position-y: 100%;
+                }
+            }
+
+            &:nth-of-type(1).active ~ .slide {
+                top: 230px;
+            }
+            &:nth-of-type(2).active ~ .slide {
+                top: 285px;
+            }
+            &:nth-of-type(3).active ~ .slide {
+                top: 340px;
+            }
+            &:nth-of-type(4).active ~ .slide {
+                top: 395px;
+            }
+            &:nth-of-type(5).active ~ .slide {
+                top: 450px;
+            }
+
+            i {
+                width: 25px;
+                height: 25px;
+                position: relative;
+                transition: 0.2s all;
+                z-index: 1;
+
+                &.basketball {
+                    background-position-x: 0;
+                }
+                &.soccer {
+                    background-position-x: 25%;
+                }
+                &.baseball {
+                    background-position-x: 50%;
+                }
+                &.iceball {
+                    background-position-x: 75%;
+                }
+                &.tennis {
+                    background-position-x: 100%;
+                }
+            }
+        }
+    }
+}

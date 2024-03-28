@@ -1,0 +1,59 @@
+//header
+header .left i {
+    background: url('../images_pink/header_leftIC.png') no-repeat;
+    background-size: 300%;
+}
+header .right .infoArea i {
+    background: url('../images_pink/header_rightIC.png') no-repeat;
+    background-size: 200%;
+}
+header .memberList .user::before {
+    background: url('../images_pink/header_userIC.png') no-repeat center;
+    background-size: contain;
+}
+header .lang {
+    background: url('../images_pink/header_langIC.png') no-repeat center;
+    background-size: contain;
+}
+
+//nav
+nav i {
+    background: url('../images_pink/nav_IC.png') no-repeat;
+    background-size: 500%;
+}
+
+//aside
+aside .ad_1 {
+    background: url('../images_pink/aside_ad.png') no-repeat center;
+    background-size: contain;
+}
+
+//mainArea
+.mainArea .topBtnBox button i {
+    background: url('../images_pink/mainArea_topBtn_collapse.png') no-repeat;
+    background-size: 100%;
+}
+.mainArea .tableList .title p::before {
+    background: url('../images_pink/mainArea_titleCorner.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableList .title i {
+    background: url('../images_pink/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableList .left .analyze {
+    background: url('../images_pink/mainArea_tableTitle_leftIC.png') no-repeat;
+    background-size: 100%;
+}
+
+//footer
+footer .top i {
+    background: url('../images_pink/footer_listIC.png') no-repeat;
+    background-size: 500%;
+}
+
+//chatroom
+.chatroom .title i {
+    background: url('../images_pink/chatroom_userIC.png') no-repeat center;
+    background-size: contain;
+}

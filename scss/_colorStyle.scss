@@ -1,0 +1,51 @@
+//header
+$header_teamArea_BG: #e6ecf8;
+$header_teamArea_borderColor_1: #ff8451;
+$header_teamArea_scoreColor: #dd5664;
+
+//nav
+$nav_BG: #0e459f;
+
+//mainArea
+$mainArea_BG: #dddddd;
+$mainArea_tableList_titleColor: #7b829f;
+$mainArea_tableList_disableBG: #efefef;
+$mainArea_tableList_disableColor: #bcc3cd;
+$mainArea_tableList_tableTitle: #ff8656;
+$mainArea_tableList_statusBG: #f1f8ff;
+$mainArea_tableList_redCard: #ff0000;
+$mainArea_tableList_yellowCard: #ffc600;
+
+//footer
+$footer_topBG: #f1f8ff;
+
+//主色系
+$mainBG_1: #2b6de7;
+$mainBG_2: #ffffff;
+$mainBG_3: #ff8656;
+
+$mainColor_1: #172c63;
+$mainColor_2: #ffffff;
+$mainColor_3: #9c9c9c;
+
+$mainBorder_1: #e5e9ec;
+
+$mainShadow_1: #0000001f;
+
+//套件
+@mixin scorllBar {
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #efefef;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #2b6de7;
+        border-radius: 10px;
+    }
+}

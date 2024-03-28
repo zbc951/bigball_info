@@ -1,0 +1,81 @@
+//header
+header .left::before,
+header .right::before {
+    background: url('../images/header_corner.png') no-repeat;
+    background-size: contain;
+}
+header .left i {
+    background: url('../images/header_leftIC.png') no-repeat;
+    background-size: 300%;
+}
+header .right .infoArea i {
+    background: url('../images/header_rightIC.png') no-repeat;
+    background-size: 200%;
+}
+header .memberList .user {
+    background: url('../images/header_userIC.png') no-repeat center;
+    background-size: contain;
+}
+header .lang {
+    background: url('../images/header_langIC.png') no-repeat center;
+    background-size: contain;
+}
+
+//nav
+nav i {
+    background: url('../images/nav_IC.png') no-repeat;
+    background-size: 500%;
+}
+
+//aside
+aside .ad_1 {
+    background: url('../images/aside_ad.png') no-repeat center;
+    background-size: contain;
+}
+
+//mainArea
+.mainArea .topBtnBox li:hover::before,
+.mainArea .topBtnBox li:hover::after {
+    background: url('../images/mainArea_topBtn_corner_hover.png') no-repeat;
+    background-size: contain;
+}
+.mainArea .topBtnBox li:active::before,
+.mainArea .topBtnBox li:active::after,
+.mainArea .topBtnBox li.active::before,
+.mainArea .topBtnBox li.active::after {
+    background: url('../images/mainArea_topBtn_corner.png') no-repeat;
+    background-size: contain;
+}
+.mainArea .topBtnBox button i {
+    background: url('../images/mainArea_topBtn_collapse.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableList .title p::before {
+    background: url('../images/mainArea_tableTitle_corner.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableList .title i {
+    background: url('../images/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableList .left .analyze {
+    background: url('../images/mainArea_tableTitle_leftIC.png') no-repeat;
+    background-size: 100%;
+}
+
+//footer
+footer .top i {
+    background: url('../images/footer_listIC.png') no-repeat;
+    background-size: 500%;
+}
+footer .top li::before,
+footer .top li::after {
+    background: url('../images/footer_corner.png') no-repeat center;
+    background-size: contain;
+}
+
+//chatroom
+.chatroom .title i {
+    background: url('../images/header_userIC.png') no-repeat center;
+    background-size: contain;
+}
