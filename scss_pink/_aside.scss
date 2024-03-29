@@ -25,4 +25,61 @@ aside {
         position: relative;
         margin: 0 auto;
     }
+
+    &.color_toggler {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 82%;
+        right: 0;
+        padding: 10px;
+        background: #ffffff56;
+
+        .btnBox {
+            display: flex;
+            flex-direction: column;
+    
+            button {
+                width: 20px;
+                height: 20px;
+                border: solid 2px transparent;
+                border-radius: 50%;
+                margin-bottom: 10px;
+    
+                &:nth-of-type(1) {
+                    background: #ffffff;
+                    border-color: #2b6de7;
+                }
+    
+                &:nth-of-type(2) {
+                    background: #2a356e;
+                    border-color: #7d86ae;
+                }
+    
+                &:nth-of-type(3) {
+                    background: #ffffff;
+                    border-color: #7a072c;
+    
+                    &:hover,&:active,&.active {
+                        background: #7a072c;
+                        border-color: #be1451;
+                    }
+                }
+    
+                &:nth-of-type(4) {
+                    background: #464646;
+                    border-color: #ff3366;
+    
+                    &:hover,&:active,&.active {
+                        background: #ff3366;
+                        border-color: #be1451;
+                    }
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }

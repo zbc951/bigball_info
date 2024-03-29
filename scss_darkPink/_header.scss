@@ -9,24 +9,17 @@ header {
     .topArea {
         width: 100%;
         height: 100px;
-        background: $mainBG_1;
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        background: #222222;
 
         //左
         .left {
             width: auto;
-            height: 57px;
-            background: $mainBG_2;
-            border-radius: 16px;
-            box-shadow: 0 2px 5px 0 $mainShadow_1;
+            height: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
             position: relative;
-            padding: 0 20px;
-            margin-left: 25px;
 
             ul {
                 width: auto;
@@ -40,10 +33,6 @@ header {
                     align-items: center;
                     cursor: pointer;
                     margin-left: 25px;
-
-                    &:first-child {
-                        margin: 0;
-                    }
 
                     i {
                         width: 24px;
@@ -62,7 +51,7 @@ header {
                     }
 
                     p {
-                        color: $mainColor_1;
+                        color: $mainColor_2;
                         font-size: 13px;
                         font-weight: bold;
                     }
@@ -98,11 +87,16 @@ header {
                         li {
                             width: auto;
                             height: auto;
+                            background: $header_topArea_moneyBG;
+                            border-radius: 3px;
+                            box-shadow: 1px 2px 5px 0 $mainShadow_1;
                             display: flex;
-                            align-items: center; 
+                            align-items: center;
+                            padding: 3px 0 2px 12px;
                             margin-bottom: 10px;
 
                             &:last-child {
+                                background: $header_topArea_vipBG;
                                 margin: 0;
                             }
 
@@ -121,8 +115,12 @@ header {
 
                             p {
                                 width: 105px;
-                                height: 24px;
-                                @include headerInput;
+                                height: 20px;
+                                color: $mainColor_2;
+                                font-size: 14px;
+                                font-weight: bold;
+                                display: flex;
+                                align-items: center;
                             }
                         }
                     }
@@ -130,38 +128,20 @@ header {
 
                 .memberList {
                     width: auto;
-                    height: 100%;
-                    background: $mainBG_2;
-                    border-radius: 16px;
-                    box-shadow: 0 2px 5px 0 $mainShadow_1;
+                    height: auto;
                     display: flex;
                     align-items: center;
                     position: relative;
                     cursor: pointer;
-                    padding: 0 20px 0 5px;
 
                     .user {
-                        width: 40px;
-                        height: calc(100% - 10px);
-                        background: $header_userIC_BG;
-                        border-radius: 16px;
-                        border: solid 1px $header_userIC_Border;
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        width: 20px;
+                        height: 24px;
                         margin-right: 15px;
-
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            width: 20px;
-                            height: 24px;
-                        }
                     }
 
                     p {
-                        color: $mainColor_1;
+                        color: $mainColor_2;
                         font-size: 18px;
                         font-weight: bold;
                         display: flex;
@@ -174,7 +154,7 @@ header {
                             height: 0;
                             border-style: solid;
                             border-width: 5px 4px 0 4px;
-                            border-color: $mainBG_1 transparent;
+                            border-color: $mainColor_1 transparent;
                             margin: 4px 0 0 10px;
                         }
                     }
@@ -185,8 +165,8 @@ header {
                         height: auto;
                         background: $list_BG;
                         position: absolute;
-                        right: 8px;
-                        top: 60px;
+                        right: 0;
+                        top: 35px;
                         padding: 5px;
                         z-index: 10;
 
@@ -231,7 +211,7 @@ header {
                         }
 
                         p {
-                            color: $header_rightArea_Color;
+                            color: $mainColor_2;
                             font-size: 14px;
                             font-weight: bold;
                             display: flex;
@@ -243,7 +223,7 @@ header {
                                 height: 0;
                                 border-style: solid;
                                 border-width: 5px 4px 0 4px;
-                                border-color: $header_rightArea_Color transparent;
+                                border-color: $mainColor_1 transparent;
                                 margin-left: 10px;
                             }
                         }
@@ -293,18 +273,16 @@ header {
         width: 100%;
         height: 120px;
         background: $mainBG_1;
-        padding: 5px 25px;
+        padding: 5px 20px;
 
         .outerBox {
             width: 100%;
             height: 100%;
-            background: $header_teamArea_BG;
-            border-radius: 16px;
             display: flex;
             align-items: center;
             // overflow-x: overlay;
-            padding: 5px 15px;
-            // @include scorllBar_2;
+            padding: 5px;
+            // @include scorllBar;
 
             .swiper-wrapper {
                 align-items: center;
@@ -312,19 +290,76 @@ header {
                 .teamBox {
                     width: 350px;
                     height: 85px;
-                    background: $mainBG_2;
-                    border-radius: 12px;
-                    box-shadow: 0 -2px 5px 0 $mainShadow_1;
+                    background: $header_teamArea_smallBG;
+                    border-radius: 5px;
+                    border: 1px solid $mainBorder_1;
                     position: relative;
                     overflow: hidden;
                     flex-shrink: 0;
                     margin-right: 20px;
+    
+                    &.one {
+
+                        &>.center {
+
+                            &::before {
+                                background: $header_teamArea_mainColor_1;
+                            }
+
+                            p {
+                                color: $header_teamArea_mainColor_1;
+                            }
+                        }
+                        
+                    }
+
+                    &.two {
+
+                        &>.center {
+
+                            &::before {
+                                background: $header_teamArea_mainColor_2;
+                            }
+
+                            p {
+                                color: $header_teamArea_mainColor_2;
+                            }
+                        }
+                        
+                    }
+                    &.three {
+
+                        &>.center {
+
+                            &::before {
+                                background: $header_teamArea_mainColor_3;
+                            }
+
+                            p {
+                                color: $header_teamArea_mainColor_3;
+                            }
+                        }
+                    }
+                    &.four {
+
+                        &>.center {
+
+                            &::before {
+                                background: $header_teamArea_mainColor_4;
+                            }
+
+                            p {
+                                color: $header_teamArea_mainColor_4;
+                            }
+                        }
+                    }
     
                     .league {
                         color: $mainColor_2;
                         font-size: 12px;
                         font-weight: bold;
                         text-align: center;
+                        opacity: 0.65;
                         padding-top: 8px;
                     }
     
@@ -335,10 +370,19 @@ header {
                         align-items: center;
                         justify-content: space-between;
                         padding: 12px 20px;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            width: 5px;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                        }
     
                         p {
                             width: 40%;
-                            color: $mainColor_1;
+                            color: $mainColor_2;
                             font-size: 16px;
                             font-weight: bold;
                             overflow: hidden;
@@ -347,7 +391,7 @@ header {
     
                             &.score {
                                 width: auto;
-                                color: $header_teamArea_scoreColor;
+                                color: $mainColor_2 !important;
                             }
                         }
                     }
@@ -363,12 +407,14 @@ header {
                         p {
                             width: 30%;
                             color: $mainColor_2;
+                            opacity: 0.65;
                             font-size: 12px;
                             font-weight: bold;
                             text-align: center;
     
                             &:nth-of-type(2) {
                                 width: auto;
+                                opacity: 0.65;
                             }
                         }
                     }

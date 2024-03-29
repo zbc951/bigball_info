@@ -1,0 +1,63 @@
+//header
+// header .topArea {
+//     background: url('../images_darkPink/header_BG.jpg') no-repeat top center;
+// }
+header .left i {
+    background: url('../images_darkPink/header_leftIC.png') no-repeat;
+    background-size: 300%;
+}
+header .right .infoArea i {
+    background: url('../images_darkPink/header_rightIC.png') no-repeat;
+    background-size: 200%;
+}
+header .memberList .user {
+    background: url('../images_darkPink/header_userIC.png') no-repeat center;
+    background-size: contain;
+}
+header .lang {
+    background: url('../images_darkPink/header_langIC.png') no-repeat center;
+    background-size: contain;
+}
+
+//nav
+nav i {
+    background: url('../images_darkPink/nav_IC.png') no-repeat;
+    background-size: 500%;
+}
+
+//aside
+aside .ad_1 {
+    background: url('../images_darkPink/aside_ad.png') no-repeat center;
+    background-size: 110%;
+    border: 1px solid $mainColor_1;
+}
+
+//mainArea
+.mainArea {
+    background: url('../images_darkPink/mainArea_BG.jpg') no-repeat top center;
+    background-size: cover;
+}
+.mainArea .topBtnBox button i {
+    background: url('../images_darkPink/mainArea_topBtn_collapse.png') no-repeat;
+    background-size: 100%;
+}
+.mainArea .tableList .title i {
+    background: url('../images_darkPink/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableList .left .analyze {
+    background: url('../images_darkPink/mainArea_tableTitle_leftIC.png') no-repeat;
+    background-size: 100%;
+}
+
+//footer
+footer .top i {
+    background: url('../images_darkPink/footer_listIC.png') no-repeat;
+    background-size: 500%;
+}
+
+//chatroom
+.chatroom .title i {
+    background: url('../images_darkPink/chatroom_userIC.png') no-repeat center;
+    background-size: contain;
+}

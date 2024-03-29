@@ -270,39 +270,6 @@ html body header .topArea .left ul li p {
   font-size: 13px;
   font-weight: bold;
 }
-html body header .topArea .left .btnBox {
-  width: auto;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  left: 25px;
-  top: 5px;
-}
-html body header .topArea .left .btnBox button {
-  width: 20px;
-  height: 20px;
-  border: solid 2px transparent;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-html body header .topArea .left .btnBox button:nth-of-type(1) {
-  background: #ffffff;
-  border-color: #2b6de7;
-}
-html body header .topArea .left .btnBox button:nth-of-type(1):hover, html body header .topArea .left .btnBox button:nth-of-type(1):active, html body header .topArea .left .btnBox button:nth-of-type(1).active {
-  background: #ff8656;
-  border-color: #ffffff;
-}
-html body header .topArea .left .btnBox button:nth-of-type(2) {
-  background: #2a356e;
-  border-color: #7d86ae;
-}
-html body header .topArea .left .btnBox button:nth-of-type(3) {
-  background: #ffffff;
-  border-color: #7a072c;
-}
 html body header .topArea .right {
   width: auto;
   height: 100%;
@@ -767,6 +734,56 @@ html body aside a {
   width: 175px;
   height: 175px;
   margin: 0 auto;
+}
+html body aside.color_toggler {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 82%;
+  padding: 10px;
+}
+html body aside.color_toggler .btnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body aside.color_toggler .btnBox button {
+  width: 20px;
+  height: 20px;
+  border: solid 2px transparent;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+html body aside.color_toggler .btnBox button:nth-of-type(1) {
+  background: #ffffff;
+  border-color: #2b6de7;
+}
+html body aside.color_toggler .btnBox button:nth-of-type(2) {
+  background: #2a356e;
+  border-color: #7d86ae;
+}
+html body aside.color_toggler .btnBox button:nth-of-type(3) {
+  background: #ffffff;
+  border-color: #7a072c;
+}
+html body aside.color_toggler .btnBox button:nth-of-type(3):hover, html body aside.color_toggler .btnBox button:nth-of-type(3):active, html body aside.color_toggler .btnBox button:nth-of-type(3).active {
+  background: #7a072c;
+  border-color: #be1451;
+}
+html body aside.color_toggler .btnBox button:nth-of-type(4) {
+  background: #464646;
+  border-color: #ff3366;
+}
+html body aside.color_toggler .btnBox button:nth-of-type(4):hover, html body aside.color_toggler .btnBox button:nth-of-type(4):active, html body aside.color_toggler .btnBox button:nth-of-type(4).active {
+  background: #ff3366;
+  border-color: #be1451;
+}
+html body aside.color_toggler .btnBox button:last-of-type {
+  margin-bottom: 0;
 }
 html body .mainArea {
   width: 100%;

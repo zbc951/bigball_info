@@ -1,0 +1,123 @@
+footer {
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    background: $mainBG_1;
+    padding: 0 205px 0 80px;
+
+    .top {
+        width: 100%;
+        height: 45px;
+
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+
+            li {
+                width: auto;
+                height: 43px;
+                border-bottom: solid 2px transparent;
+                display: flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                transition: 0.3s all;
+                margin: 0 10px;
+                padding: 0 20px;
+
+                &:last-child {
+                    display: none;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 0;
+                    background: $footer_hoverBG;
+                    left: 0;
+                    bottom: 0;
+                    transition: 0.4s all;
+                }
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    background: $footer_hoverBorder;
+                    left: 0;
+                    bottom: 0;
+                    transition: 0.3s all;
+                }
+
+                &:hover,&:active,&.active {
+                    
+                    &::before {
+                        height: 100%;
+                    }
+
+                    &::after {
+                        width: 100%;
+                    }
+
+                    p {
+                        color: $mainColor_2;
+                    }
+
+                    i {
+                        background-position-y: 100%;
+                    }
+                }
+
+                p {
+                    color: $mainColor_3;
+                    font-size: 14px;
+                    font-weight: bold;
+                    position: relative;
+                }
+
+                i {
+                    width: 17px;
+                    height: 17px;
+                    position: relative;
+                    margin-right: 5px;
+
+                    &.help {
+                        background-position-x: 0;
+                    }
+                    &.feeback {
+                        background-position-x: 25%;
+                    }
+                    &.event {
+                        background-position-x: 50%;
+                    }
+                    &.rule {
+                        background-position-x: 75%;
+                    }
+                    &.about {
+                        background-position-x: 100%;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+
+        p {
+            color: $mainColor_3;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}

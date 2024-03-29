@@ -176,7 +176,7 @@ $(function(){
 
 //切換css
 $(function(){
-    $("header .left .btnBox button").on("click",function(){
+    $("aside.color_toggler .btnBox button").on("click",function(){
         var n = $(this).index();
 
         $(this)
@@ -187,54 +187,22 @@ $(function(){
         {
             $(".cssList")
             .attr("href","./css/style.css");
-
-            $("nav")
-            .addClass("origin");
-
-            if($("nav .slide").has("span").length < 1)
-            {
-                for(var i = 1;i <= 50; i++)
-                {
-                    $("nav.origin .slide")
-                    .append("<span style='width: "+ (55 - i) +"px;height: "+ (55 - i) +"px;transition-delay: "+ (i * 0.003) +"s;transform: translateY("+ (i / 2) +"px)'></span>");
-                }
-            }
-
-            $(".topBtnBox")
-            .removeClass("darkblue");
         }
         else if(n == 1)
         {
             $(".cssList")
             .attr("href","./css_darkblue/style.css");
-
-            $("nav")
-            .removeClass("origin");
-
-            $("nav .slide span")
-            .remove();
-
-            $(".topBtnBox")
-            .addClass("darkblue");
         }
         else if(n == 2)
         {
             $(".cssList")
             .attr("href","./css_pink/style.css");
-
-            $("nav")
-            .removeClass("origin");
-
-            $("nav .slide span")
-            .remove();
-
-            $(".topBtnBox")
-            .removeClass("darkblue");
         }
-
-        $("nav li:first-child")
-        .addClass("active")
-        .siblings().removeClass("active");
+        else if(n == 3)
+        {
+            $(".cssList")
+            .attr("href","./css_darkPink/style.css");
+        }
     })
 })
 

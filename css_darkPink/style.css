@@ -97,67 +97,64 @@ input[type=date]::-webkit-calendar-picker-indicator {
           appearance: none;
 }
 
-header .topArea {
-  background: url("../images_darkblue/header_BG.jpg") no-repeat top center;
-}
-
 header .left i {
-  background: url("../images_darkblue/header_leftIC.png") no-repeat;
+  background: url("../images_darkPink/header_leftIC.png") no-repeat;
   background-size: 300%;
 }
 
 header .right .infoArea i {
-  background: url("../images_darkblue/header_rightIC.png") no-repeat;
+  background: url("../images_darkPink/header_rightIC.png") no-repeat;
   background-size: 200%;
 }
 
 header .memberList .user {
-  background: url("../images_darkblue/header_userIC.png") no-repeat center;
+  background: url("../images_darkPink/header_userIC.png") no-repeat center;
   background-size: contain;
 }
 
 header .lang {
-  background: url("../images_darkblue/header_langIC.png") no-repeat center;
+  background: url("../images_darkPink/header_langIC.png") no-repeat center;
   background-size: contain;
 }
 
 nav i {
-  background: url("../images_darkblue/nav_IC.png") no-repeat;
+  background: url("../images_darkPink/nav_IC.png") no-repeat;
   background-size: 500%;
 }
 
 aside .ad_1 {
-  background: url("../images_darkblue/aside_ad.png") no-repeat center;
-  background-size: contain;
+  background: url("../images_darkPink/aside_ad.png") no-repeat center;
+  background-size: 110%;
+  border: 1px solid #ff3366;
 }
 
 .mainArea {
-  background: url("../images_darkblue/mainArea_BG.jpg") no-repeat top center;
+  background: url("../images_darkPink/mainArea_BG.jpg") no-repeat top center;
   background-size: cover;
 }
 
 .mainArea .topBtnBox button i {
-  background: url("../images_darkblue/mainArea_topBtn_collapse.png") no-repeat;
+  background: url("../images_darkPink/mainArea_topBtn_collapse.png") no-repeat;
   background-size: 100%;
 }
 
 .mainArea .tableList .title i {
-  background: url("../images_darkblue/arrow_1.png") no-repeat center;
+  background: url("../images_darkPink/arrow_1.png") no-repeat center;
   background-size: contain;
 }
 
 .mainArea .tableList .left .analyze {
-  background: url("../images_darkblue/mainArea_tableTitle_leftIC.png") no-repeat;
+  background: url("../images_darkPink/mainArea_tableTitle_leftIC.png") no-repeat;
   background-size: 100%;
 }
 
 footer .top i {
-  background: url("../images_darkblue/footer_listIC.png") no-repeat;
+  background: url("../images_darkPink/footer_listIC.png") no-repeat;
   background-size: 500%;
 }
 
 .chatroom .title i {
-  background: url("../images_darkblue/chatroom_userIC.png") no-repeat center;
+  background: url("../images_darkPink/chatroom_userIC.png") no-repeat center;
   background-size: contain;
 }
 
@@ -182,13 +179,13 @@ html body header {
 html body header .topArea {
   width: 100%;
   height: 100px;
-  border-bottom: solid 1px #28387c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: #222222;
 }
 html body header .topArea .left {
   width: auto;
@@ -235,50 +232,9 @@ html body header .topArea .left ul li i.pro {
   background-position-x: 100%;
 }
 html body header .topArea .left ul li p {
-  color: #aab1d4;
+  color: #ffffff;
   font-size: 13px;
   font-weight: bold;
-}
-html body header .topArea .left .btnBox {
-  width: auto;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  left: 25px;
-  top: 5px;
-}
-html body header .topArea .left .btnBox button {
-  width: 20px;
-  height: 20px;
-  border: solid 2px transparent;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-html body header .topArea .left .btnBox button:nth-of-type(1) {
-  background: #ffffff;
-  border-color: #2b6de7;
-}
-html body header .topArea .left .btnBox button:nth-of-type(2) {
-  background: #2a356e;
-  border-color: #7d86ae;
-}
-html body header .topArea .left .btnBox button:nth-of-type(2):hover, html body header .topArea .left .btnBox button:nth-of-type(2):active, html body header .topArea .left .btnBox button:nth-of-type(2).active {
-  background: #7d86ae;
-  border-color: #0f2358;
-}
-html body header .topArea .left .btnBox button:nth-of-type(3) {
-  background: #ffffff;
-  border-color: #7a072c;
-}
-html body header .topArea .left .btnBox button:nth-of-type(4) {
-  background: #464646;
-  border-color: #ff3366;
-}
-html body header .topArea .left .btnBox button:nth-of-type(4):hover, html body header .topArea .left .btnBox button:nth-of-type(4):active, html body header .topArea .left .btnBox button:nth-of-type(4).active {
-  background: #ff3366;
-  border-color: #be1451;
 }
 html body header .topArea .right {
   width: auto;
@@ -318,8 +274,7 @@ html body header .topArea .right .top .infoArea ul {
 html body header .topArea .right .top .infoArea ul li {
   width: auto;
   height: auto;
-  background: -webkit-gradient(linear, left top, right top, from(#52506c), color-stop(72%, #23306b));
-  background: linear-gradient(to right, #52506c 0%, #23306b 72%);
+  background: #333333;
   border-radius: 3px;
   -webkit-box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.3137254902);
           box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.3137254902);
@@ -333,8 +288,7 @@ html body header .topArea .right .top .infoArea ul li {
   margin-bottom: 10px;
 }
 html body header .topArea .right .top .infoArea ul li:last-child {
-  background: -webkit-gradient(linear, left top, right top, from(#455f5f), color-stop(72%, #23306b));
-  background: linear-gradient(to right, #455f5f 0%, #23306b 72%);
+  background: #333333;
   margin: 0;
 }
 html body header .topArea .right .top .infoArea ul li i {
@@ -399,7 +353,7 @@ html body header .topArea .right .top .memberList p span {
   height: 0;
   border-style: solid;
   border-width: 5px 4px 0 4px;
-  border-color: #ffffff transparent;
+  border-color: #ff3366 transparent;
   margin: 4px 0 0 10px;
 }
 html body header .topArea .right .top .memberList ul {
@@ -453,7 +407,7 @@ html body header .topArea .right .bottom .outerList li:first-child {
   margin-right: 40px;
 }
 html body header .topArea .right .bottom .outerList li p {
-  color: #aab1d4;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -469,7 +423,7 @@ html body header .topArea .right .bottom .outerList li p span {
   height: 0;
   border-style: solid;
   border-width: 5px 4px 0 4px;
-  border-color: #ffffff transparent;
+  border-color: #ff3366 transparent;
   margin-left: 10px;
 }
 html body header .topArea .right .bottom .lang {
@@ -505,7 +459,7 @@ html body header .topArea .right .bottom .lang ul li:hover, html body header .to
 html body header .teamArea {
   width: 100%;
   height: 120px;
-  background: #04061c;
+  background: #222222;
   padding: 5px 20px;
 }
 html body header .teamArea .outerBox {
@@ -527,28 +481,38 @@ html body header .teamArea .outerBox .swiper-wrapper {
 html body header .teamArea .outerBox .swiper-wrapper .teamBox {
   width: 350px;
   height: 85px;
-  background: -webkit-gradient(linear, left top, right top, from(#009fff), to(#037bfd));
-  background: linear-gradient(to right, #009fff 0%, #037bfd 100%);
+  background: #333333;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3137254902);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3137254902);
+  border: 1px solid #3d3d3d;
   position: relative;
   overflow: hidden;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 20px;
 }
-html body header .teamArea .outerBox .swiper-wrapper .teamBox.two {
-  background: -webkit-gradient(linear, left top, right top, from(#ab56f6), to(#6b53f7));
-  background: linear-gradient(to right, #ab56f6 0%, #6b53f7 100%);
+html body header .teamArea .outerBox .swiper-wrapper .teamBox.one > .center::before {
+  background: #ff3366;
 }
-html body header .teamArea .outerBox .swiper-wrapper .teamBox.three {
-  background: -webkit-gradient(linear, left top, right top, from(#3cc84f), to(#0bba6a));
-  background: linear-gradient(to right, #3cc84f 0%, #0bba6a 100%);
+html body header .teamArea .outerBox .swiper-wrapper .teamBox.one > .center p {
+  color: #ff3366;
 }
-html body header .teamArea .outerBox .swiper-wrapper .teamBox.four {
-  background: -webkit-gradient(linear, left top, right top, from(#fd7f5c), to(#fb5d97));
-  background: linear-gradient(to right, #fd7f5c 0%, #fb5d97 100%);
+html body header .teamArea .outerBox .swiper-wrapper .teamBox.two > .center::before {
+  background: #fa803f;
+}
+html body header .teamArea .outerBox .swiper-wrapper .teamBox.two > .center p {
+  color: #fa803f;
+}
+html body header .teamArea .outerBox .swiper-wrapper .teamBox.three > .center::before {
+  background: #f2a53f;
+}
+html body header .teamArea .outerBox .swiper-wrapper .teamBox.three > .center p {
+  color: #f2a53f;
+}
+html body header .teamArea .outerBox .swiper-wrapper .teamBox.four > .center::before {
+  background: #408af0;
+}
+html body header .teamArea .outerBox .swiper-wrapper .teamBox.four > .center p {
+  color: #408af0;
 }
 html body header .teamArea .outerBox .swiper-wrapper .teamBox .league {
   color: #ffffff;
@@ -571,6 +535,14 @@ html body header .teamArea .outerBox .swiper-wrapper .teamBox .center {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 12px 20px;
+  position: relative;
+}
+html body header .teamArea .outerBox .swiper-wrapper .teamBox .center::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 0;
 }
 html body header .teamArea .outerBox .swiper-wrapper .teamBox .center p {
   width: 40%;
@@ -583,6 +555,7 @@ html body header .teamArea .outerBox .swiper-wrapper .teamBox .center p {
 }
 html body header .teamArea .outerBox .swiper-wrapper .teamBox .center p.score {
   width: auto;
+  color: #ffffff !important;
 }
 html body header .teamArea .outerBox .swiper-wrapper .teamBox .bottom {
   width: 100%;
@@ -601,6 +574,7 @@ html body header .teamArea .outerBox .swiper-wrapper .teamBox .bottom {
 html body header .teamArea .outerBox .swiper-wrapper .teamBox .bottom p {
   width: 30%;
   color: #ffffff;
+  opacity: 0.65;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
@@ -612,7 +586,7 @@ html body header .teamArea .outerBox .swiper-wrapper .teamBox .bottom p:nth-of-t
 html body nav {
   width: 80px;
   height: 100%;
-  background: #0f1945;
+  background: #222222;
   position: absolute;
   top: 0;
   left: 0;
@@ -634,25 +608,32 @@ html body nav ul {
   padding-top: 230px;
 }
 html body nav ul li {
-  width: 70px;
+  width: 60px;
   height: 60px;
-  border-radius: 16px 0 0 16px;
+  border-radius: 30px;
+  border: 1px solid #3d3d3d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 10px;
   position: relative;
   cursor: pointer;
-  padding-left: 18px;
   z-index: 2;
 }
 html body nav ul li.slide {
-  background: #0a0d2b;
+  background: #ff3366;
   position: absolute;
   top: 0;
+  left: 50%;
   pointer-events: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   z-index: 1;
@@ -664,7 +645,8 @@ html body nav ul li.slide::before, html body nav ul li.slide::after {
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: #0a0d2b transparent;
+  border-color: #ff3366 transparent;
+  display: none;
 }
 html body nav ul li.slide::before {
   bottom: -8px;
@@ -679,7 +661,7 @@ html body nav ul li.slide span {
   position: fixed;
   top: 230px;
   border-radius: 50%;
-  background: #1a224e;
+  background: #171717;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
@@ -715,16 +697,16 @@ html body nav ul li:nth-of-type(1).active ~ .slide {
   top: 230px;
 }
 html body nav ul li:nth-of-type(2).active ~ .slide {
-  top: 290px;
+  top: 300px;
 }
 html body nav ul li:nth-of-type(3).active ~ .slide {
-  top: 350px;
+  top: 370px;
 }
 html body nav ul li:nth-of-type(4).active ~ .slide {
-  top: 410px;
+  top: 440px;
 }
 html body nav ul li:nth-of-type(5).active ~ .slide {
-  top: 470px;
+  top: 510px;
 }
 html body nav ul li i {
   width: 25px;
@@ -748,7 +730,7 @@ html body nav ul li i.tennis {
 html body aside {
   width: 205px;
   height: 100%;
-  background: #11153b;
+  background: #171717;
   position: absolute;
   right: 0;
   top: 0;
@@ -765,6 +747,7 @@ html body aside.color_toggler {
   height: auto;
   position: absolute;
   top: 82%;
+  right: 0;
   padding: 10px;
   background: rgba(255, 255, 255, 0.337254902);
 }
@@ -814,6 +797,7 @@ html body aside.color_toggler .btnBox button:last-of-type {
 html body .mainArea {
   width: 100%;
   height: 100%;
+  background: #171717;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -849,8 +833,9 @@ html body .mainArea .topBtnBox ul {
 html body .mainArea .topBtnBox ul li {
   width: auto;
   height: 32px;
-  background: #1a224e;
-  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #757575;
+  border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,26 +852,25 @@ html body .mainArea .topBtnBox ul li {
   overflow: hidden;
   padding: 0 32px;
   margin-right: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-html body .mainArea .topBtnBox ul li:hover, html body .mainArea .topBtnBox ul li:active {
-  background: -webkit-gradient(linear, left top, right top, from(#009fff), to(#037bfd));
-  background: linear-gradient(to right, #009fff 0%, #037bfd 100%);
-  -webkit-box-shadow: 0 0 10px 5px rgba(0, 159, 255, 0.3137254902), -3px 0 5px 3px rgba(0, 159, 255, 0.3137254902), 3px 0 5px 3px rgba(0, 159, 255, 0.3137254902);
-          box-shadow: 0 0 10px 5px rgba(0, 159, 255, 0.3137254902), -3px 0 5px 3px rgba(0, 159, 255, 0.3137254902), 3px 0 5px 3px rgba(0, 159, 255, 0.3137254902);
+html body .mainArea .topBtnBox ul li:hover, html body .mainArea .topBtnBox ul li:active, html body .mainArea .topBtnBox ul li.active {
+  background: #ff3366;
+  border-color: #ff3366;
   z-index: 1;
 }
-html body .mainArea .topBtnBox ul li:hover p, html body .mainArea .topBtnBox ul li:active p {
+html body .mainArea .topBtnBox ul li:hover p, html body .mainArea .topBtnBox ul li:active p, html body .mainArea .topBtnBox ul li.active p {
   color: #ffffff;
 }
 html body .mainArea .topBtnBox ul li.active {
-  background: -webkit-gradient(linear, left top, right top, from(#009fff), to(#037bfd));
-  background: linear-gradient(to right, #009fff 0%, #037bfd 100%);
+  background: #ff3366;
 }
 html body .mainArea .topBtnBox ul li.active p {
   color: #ffffff;
 }
 html body .mainArea .topBtnBox ul li p {
-  color: #aab1d4;
+  color: #757575;
   font-size: 16px;
   font-weight: bold;
   -webkit-user-select: none;
@@ -943,9 +927,10 @@ html body .mainArea .topBtnBox ul li i {
 html body .mainArea .topBtnBox button {
   width: auto;
   height: 36px;
-  background: #1a224e;
+  background: #222222;
   border-radius: 10px;
-  color: #aab1d4;
+  border: 1px solid #3d3d3d;
+  color: #ffffff;
   font-size: 15px;
   font-weight: bold;
   display: -webkit-box;
@@ -961,10 +946,8 @@ html body .mainArea .topBtnBox button {
   transition: 0.15s all;
   padding: 0 10px;
 }
-html body .mainArea .topBtnBox button:hover, html body .mainArea .topBtnBox button:active {
-  -webkit-box-shadow: 0 0 10px 5px rgba(0, 159, 255, 0.3137254902), -3px 0 5px 3px rgba(0, 159, 255, 0.3137254902), 3px 0 5px 3px rgba(0, 159, 255, 0.3137254902);
-          box-shadow: 0 0 10px 5px rgba(0, 159, 255, 0.3137254902), -3px 0 5px 3px rgba(0, 159, 255, 0.3137254902), 3px 0 5px 3px rgba(0, 159, 255, 0.3137254902);
-  background: #028bfe;
+html body .mainArea .topBtnBox button:hover, html body .mainArea .topBtnBox button:active, html body .mainArea .topBtnBox button.active {
+  background: #ff3366;
   color: #ffffff;
 }
 html body .mainArea .topBtnBox button.active {
@@ -990,17 +973,19 @@ html body .mainArea .tableList::-webkit-scrollbar {
   height: 5px;
 }
 html body .mainArea .tableList::-webkit-scrollbar-track {
-  background: #0a0d2b;
+  background: #000000;
   border-radius: 10px;
 }
 html body .mainArea .tableList::-webkit-scrollbar-thumb {
-  background: #727ebb;
+  background: #333333;
   border-radius: 10px;
 }
 html body .mainArea .tableList .listBox {
   width: 100%;
   height: 47px;
+  background: #222222;
   border-radius: 10px;
+  border: 1px solid #3d3d3d;
   overflow: hidden;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
@@ -1019,7 +1004,6 @@ html body .mainArea .tableList .listBox:last-child {
 html body .mainArea .tableList .listBox .title {
   width: 100%;
   height: 47px;
-  background: #1a224e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1029,6 +1013,7 @@ html body .mainArea .tableList .listBox .title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 1px solid #3d3d3d;
   cursor: pointer;
 }
 html body .mainArea .tableList .listBox .title p {
@@ -1058,7 +1043,6 @@ html body .mainArea .tableList .listBox .title i {
 html body .mainArea .tableList .listBox .tableBox {
   width: 100%;
   height: auto;
-  background: #1f295b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,7 +1056,7 @@ html body .mainArea .tableList .listBox .tableBox:last-child .right {
 html body .mainArea .tableList .listBox .tableBox .left {
   width: auto;
   height: auto;
-  border-bottom: solid 1px #354388;
+  border-bottom: solid 1px #3d3d3d;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -1084,9 +1068,9 @@ html body .mainArea .tableList .listBox .tableBox .left tr th {
 html body .mainArea .tableList .listBox .tableBox .left tr th button {
   width: auto;
   height: auto;
-  background: #17204d;
+  background: #333333;
   border-radius: 20px;
-  color: #5d6694;
+  color: #4f4f4f;
   font-size: 12px;
   font-weight: bold;
   display: -webkit-inline-box;
@@ -1104,23 +1088,34 @@ html body .mainArea .tableList .listBox .tableBox .left tr th button {
   margin-right: 10px;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr th button.active {
-  background: -webkit-gradient(linear, left top, right top, from(#386b76), to(#394584));
-  background: linear-gradient(to right, #386b76 0%, #394584 100%);
+  border: 1px solid #ff3366;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3137254902);
           box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3137254902);
-  color: #36d84c;
   pointer-events: visible;
+  color: #ff3366;
+}
+html body .mainArea .tableList .listBox .tableBox .left tr th button.active i::before {
+  background: #ff3366 !important;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr th button:hover, html body .mainArea .tableList .listBox .tableBox .left tr th button:active {
-  background: #394685;
-  -webkit-box-shadow: 0 0 5px 1px #36d84c;
-          box-shadow: 0 0 5px 1px #36d84c;
+  background: #ff3366;
+  -webkit-box-shadow: 0 0 5px 1px #ff3366;
+          box-shadow: 0 0 5px 1px #ff3366;
+  color: #ffffff;
+}
+html body .mainArea .tableList .listBox .tableBox .left tr th button:hover i, html body .mainArea .tableList .listBox .tableBox .left tr th button:active i {
+  -webkit-filter: brightness(8);
+          filter: brightness(8);
+}
+html body .mainArea .tableList .listBox .tableBox .left tr th button:hover i::before, html body .mainArea .tableList .listBox .tableBox .left tr th button:active i::before {
+  -webkit-filter: brightness(8);
+          filter: brightness(8);
 }
 html body .mainArea .tableList .listBox .tableBox .left tr th button:first-child.active i {
-  background: #36d84c;
+  background: #ff3366;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr th button:first-child.active i::before {
-  background: #36d84c;
+  background: #4f4f4f;
   -webkit-animation: sparkle 1s linear 0s infinite;
           animation: sparkle 1s linear 0s infinite;
 }
@@ -1151,7 +1146,7 @@ html body .mainArea .tableList .listBox .tableBox .left tr th button:first-child
 html body .mainArea .tableList .listBox .tableBox .left tr th button:first-child i {
   width: 6px;
   height: 6px;
-  background: #5d6694;
+  background: #4f4f4f;
   border-radius: 50%;
   position: relative;
 }
@@ -1165,19 +1160,18 @@ html body .mainArea .tableList .listBox .tableBox .left tr th button:first-child
   border-radius: 50%;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr th button:last-child.active {
-  background: -webkit-gradient(linear, left top, right top, from(#386ba3), to(#394584));
-  background: linear-gradient(to right, #386ba3 0%, #394584 100%);
+  background: transparent;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr th button:last-child.active i {
   background-position-y: 100%;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr th button:last-child.active p {
-  color: #36dcff;
+  color: #ff3366;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr th button:last-child:hover, html body .mainArea .tableList .listBox .tableBox .left tr th button:last-child:active {
-  background: #394685;
-  -webkit-box-shadow: 0 0 5px 1px #36dcff;
-          box-shadow: 0 0 5px 1px #36dcff;
+  background: #ff3366;
+  -webkit-box-shadow: 0 0 5px 1px #ff3366;
+          box-shadow: 0 0 5px 1px #ff3366;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr th button i {
   width: 12px;
@@ -1194,7 +1188,7 @@ html body .mainArea .tableList .listBox .tableBox .left tr td:first-child {
   padding: 10px 32px;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr td:first-child p {
-  color: #aab1d4;
+  color: #757575;
   line-height: 18px;
   padding: 0;
 }
@@ -1202,11 +1196,11 @@ html body .mainArea .tableList .listBox .tableBox .left tr td:nth-of-type(2) {
   width: 250px;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr td:last-child p {
-  border-right: solid 1px #354388;
+  border-right: solid 1px #3d3d3d;
   padding-right: 32px;
 }
 html body .mainArea .tableList .listBox .tableBox .left tr td p {
-  color: #ffffff;
+  color: #909090;
   font-size: 13px;
   font-weight: bold;
 }
@@ -1219,7 +1213,7 @@ html body .mainArea .tableList .listBox .tableBox .left tr td p:last-child {
 html body .mainArea .tableList .listBox .tableBox .outerBox {
   width: 100%;
   height: auto;
-  border-bottom: solid 1px #354388;
+  border-bottom: solid 1px #3d3d3d;
   padding-bottom: 5px;
   overflow: hidden;
 }
@@ -1233,11 +1227,11 @@ html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox::-webkit-s
   height: 5px;
 }
 html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox::-webkit-scrollbar-track {
-  background: #0a0d2b;
+  background: #000000;
   border-radius: 10px;
 }
 html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox::-webkit-scrollbar-thumb {
-  background: #727ebb;
+  background: #333333;
   border-radius: 10px;
 }
 html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox ul {
@@ -1260,7 +1254,7 @@ html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox ul li:last
 html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox ul li .smallTitle {
   width: 100%;
   height: 30%;
-  color: #ffffff;
+  color: #ff3366;
   font-size: 13px;
   font-weight: bold;
   display: -webkit-box;
@@ -1276,7 +1270,7 @@ html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox ul li .sma
 html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox ul li .text {
   width: 100%;
   height: 70%;
-  color: #aab1d4;
+  color: #464646;
   font-size: 13px;
   font-weight: bold;
   display: -webkit-box;
@@ -1294,17 +1288,16 @@ html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox ul li .tex
           justify-content: center;
 }
 html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox ul li .text span {
-  color: #ffffff;
+  color: #757575;
   line-height: 18px;
 }
 html body .mainArea .tableList .listBox .tableBox .outerBox .innerBox ul li .text span.disable {
-  color: #aab1d4;
+  color: #464646;
 }
 html body .mainArea .tableList .listBox .tableBox .right {
   width: 130px;
   height: auto;
-  background: #2a356e;
-  border-bottom: solid 1px #5161b1;
+  border-bottom: solid 1px #3d3d3d;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -1325,13 +1318,13 @@ html body .mainArea .tableList .listBox .tableBox .right li:last-child {
   height: 70%;
 }
 html body .mainArea .tableList .listBox .tableBox .right li .smallTitle {
-  color: #ffffff;
+  color: #ff3366;
   font-size: 13px;
   font-weight: bold;
   text-align: center;
 }
 html body .mainArea .tableList .listBox .tableBox .right li .disable {
-  color: #aab1d4;
+  color: #464646;
   font-size: 13px;
   font-weight: bold;
   text-align: center;
@@ -1377,7 +1370,7 @@ html body footer {
   width: 100%;
   min-width: 1000px;
   height: auto;
-  background: #04061c;
+  background: #222222;
   padding: 0 205px 0 80px;
 }
 html body footer .top {
@@ -1419,8 +1412,7 @@ html body footer .top ul li::before {
   position: absolute;
   width: 100%;
   height: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#0e355c), to(#04061c));
-  background: linear-gradient(to top, #0e355c 0%, #04061c 100%);
+  background: #222222;
   left: 0;
   bottom: 0;
   -webkit-transition: 0.4s all;
@@ -1431,7 +1423,7 @@ html body footer .top ul li::after {
   position: absolute;
   width: 0;
   height: 2px;
-  background: #27afff;
+  background: #ff3366;
   left: 0;
   bottom: 0;
   -webkit-transition: 0.3s all;
@@ -1444,13 +1436,13 @@ html body footer .top ul li:hover::after, html body footer .top ul li:active::af
   width: 100%;
 }
 html body footer .top ul li:hover p, html body footer .top ul li:active p, html body footer .top ul li.active p {
-  color: #27afff;
+  color: #ffffff;
 }
 html body footer .top ul li:hover i, html body footer .top ul li:active i, html body footer .top ul li.active i {
   background-position-y: 100%;
 }
 html body footer .top ul li p {
-  color: #aab1d4;
+  color: #757575;
   font-size: 14px;
   font-weight: bold;
   position: relative;
@@ -1486,10 +1478,13 @@ html body footer .bottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 20px;
 }
 html body footer .bottom p {
-  color: #aab1d4;
+  color: #757575;
   font-size: 14px;
   font-weight: bold;
 }
@@ -1510,8 +1505,7 @@ html body .chatroom.active .chatBox {
 html body .chatroom .title {
   width: 300px;
   height: 40px;
-  background: -webkit-gradient(linear, left top, right top, from(#009fff), to(#037bfd));
-  background: linear-gradient(to right, #009fff 0%, #037bfd 100%);
+  background: #ff3366;
   border-radius: 10px 10px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1614,11 +1608,11 @@ html body .chatroom .chatBox .chatArea::-webkit-scrollbar {
   height: 5px;
 }
 html body .chatroom .chatBox .chatArea::-webkit-scrollbar-track {
-  background: #0a0d2b;
+  background: #000000;
   border-radius: 10px;
 }
 html body .chatroom .chatBox .chatArea::-webkit-scrollbar-thumb {
-  background: #727ebb;
+  background: #333333;
   border-radius: 10px;
 }
 html body .chatroom .chatBox .chatArea div {
@@ -1631,8 +1625,7 @@ html body .chatroom .chatBox .chatArea div.cus {
 }
 html body .chatroom .chatBox .chatArea div p {
   display: inline-block;
-  background: -webkit-gradient(linear, left top, right top, from(#009fff), to(#037bfd));
-  background: linear-gradient(to right, #009fff 0%, #037bfd 100%);
+  background: #ff3366;
   border-radius: 30px;
   color: #ffffff;
   font-size: 14px;
